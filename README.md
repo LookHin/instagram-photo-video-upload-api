@@ -15,6 +15,8 @@ $obj = new InstagramUpload();
 $obj->Login("YOUR_IG_USERNAME", "YOUR_IG_PASSWORD");
 $obj->UploadVideo("test-video.mp4", "square-thumb.jpg", "Test Upload Video From PHP");
 ```
+## Rewrite Code From
+[https://github.com/mgp25/Instagram-API](https://github.com/mgp25/Instagram-API)
 
 ## About Us
 Name : Khwanchai Kaewyos (LookHin)  
