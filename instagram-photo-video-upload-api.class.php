@@ -137,7 +137,7 @@ class InstagramUpload{
     $arrPostData['_csrftoken'] = $this->csrftoken;
     $arrPostData['upload_id'] = $this->upload_id;
     $arrPostData['image_compression'] = '{"lib_name":"jt","lib_version":"1.3.0","quality":"100"}';
-    $arrPostData['photo'] = curl_file_create($file);
+    $arrPostData['photo'] = curl_file_create(realpath($file));
 
     $strUrl = $this->api_url."/upload/photo/";
 
@@ -205,7 +205,7 @@ class InstagramUpload{
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
     curl_setopt($ch, CURLOPT_USERAGENT, $this->user_agent);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, file_get_contents($file));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, file_get_contents(realpath($file)));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
