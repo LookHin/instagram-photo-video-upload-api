@@ -61,6 +61,7 @@ class InstagramUpload{
   public function UploadVideo($video, $image, $caption){
     $this->UploadVideoApi($video);
     $this->UploadPhotoApi($image);
+    sleep(60);
     $this->ConfigVideoApi($caption);
   }
 
