@@ -18,7 +18,7 @@ $obj->UploadVideo("test-video.mp4", "square-thumb.jpg", "Test Upload Video From 
 
 ## Important
 Disable Two-Factor Authentication https://www.instagram.com/accounts/two_factor_authentication/
-![Disable Two-Factor Authentication](https://www.unzeen.com/github/instagram-photo-video-upload-api/disable-two-factor-authentication.jpg "Disable Two-Factor Authentication")
+![Disable Two-Factor Authentication](https://www.onlyme.dev/github/instagram-photo-video-upload-api/disable-two-factor-authentication.jpg "Disable Two-Factor Authentication")
 
 ## Rewrite Code From
 [https://github.com/mgp25/Instagram-API](https://github.com/mgp25/Instagram-API)
